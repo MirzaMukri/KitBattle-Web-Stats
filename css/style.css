@@ -1,0 +1,119 @@
+/*  
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-**-*-*-*
+    NAVBAR LINKS CAN BE EDITED ON navbar.php 
+
+    1 = YES
+    0 = NO
+
+    You may EDIT it but not REPUBLISH it.
+    Copyrighted by Mukri(PlanetBn.com) C 2017
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-**-*-*-*
+*/
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font: 15px 'Quantico', sans-serif;
+    background-color: #294F6D;
+    color: white;
+}
+
+/* Utils */
+a.list-group-item, li.list-group-item {
+    background-color: #123652 !important;
+    color: white;
+    border-color: #6690B1;
+}
+a.list-group-item:hover {
+    color: #6690B1;
+}
+.table thead {
+    background-color: #123652 !important;
+}
+.table tbody {
+    background-color: #6690B1;
+}
+.table td , th, table {
+    border-color: #123652 !important;
+}
+.well .well-inside {
+    background-color: #3C3C3C !important;
+}
+h4 {
+    color: white;
+}
+.right {
+	float: right;	
+}
+.left {
+	float: left;	
+}
+.btn-danger {
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 5px solid #aa3d37;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn-info {
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 5px solid #337ab7;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.panel {
+    border: none;
+    color: white;
+}
+.panel-body, .panel-heading, .panel-footer {
+    background-color: #575757 !important;
+    color: white;
+}
+.well {
+    border: 0px;
+    background-color: #527590;
+    border-bottom: 5px solid #042037;
+    border-radius: 0 !important;
+}
+
+/* Navbar */
+.nav {
+    border-top: 0px !important;
+    box-shadow: none;
+}
+.navbar {
+    border-top: 0px !important;
+    box-shadow: none;
+    border-radius: 0 !important;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    background-color: #123652;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 5px solid #042037;
+    margin: 0px;
+}
+.nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav li a {
+    color: white !important;
+}
+.nav li a:hover {
+    color: #707070 !important;
+}
+
+/* Top Players */
+.top-player {
+    margin-top: 50px;
+}
+.top-player table td {
+    color: white;
+}
+.top-player img {
+    display: block;
+    margin: 0 auto;
+}
