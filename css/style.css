@@ -1,6 +1,6 @@
-/*  
+/*
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-**-*-*-*
-    NAVBAR LINKS CAN BE EDITED ON navbar.php 
+    NAVBAR LINKS CAN BE EDITED ON navbar.php
 
     1 = YES
     0 = NO
@@ -42,10 +42,10 @@ h4 {
     color: white;
 }
 .right {
-	float: right;	
+	float: right;
 }
 .left {
-	float: left;	
+	float: left;
 }
 .btn-danger {
     border: none;
@@ -77,6 +77,9 @@ h4 {
 }
 
 /* Navbar */
+.search-nav {
+  padding-top: 10px;
+}
 .nav {
     border-top: 0px !important;
     box-shadow: none;
@@ -116,4 +119,9 @@ h4 {
 .top-player img {
     display: block;
     margin: 0 auto;
+}
+
+/* Players Stats */
+.players {
+  margin-top: 50px;
 }

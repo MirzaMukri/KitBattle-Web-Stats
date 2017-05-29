@@ -1,23 +1,19 @@
 <?php
 include 'config.php';
-
 if($debugmode = 0) {
     error_reporting(0);
 }
-
 $con = mysqli_connect($ip, $user, $password, $database);
-
 if(!$con) {
     die("Connection Failed! It is down or under maintenance!");
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo strtoupper($servername)." KitBattle Stats";?></title>
+    <title><?php echo $servername." KitBattle Stats";?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
@@ -52,11 +48,9 @@ if(!$con) {
                     <?php
                     if(isset($_GET['sort']) || (!empty($_GET['sort']))) {
                         $sortby = $_GET['sort'];
-
                         if($sortby == "kills") {
                             $query = "SELECT * FROM ".$table." ORDER BY Kills DESC LIMIT ".$topplayers;
                             $result = mysqli_query($con, $query);
-
                             if(mysqli_num_rows($result) > 0) {
                                 $num = 0;
                                 while($row = mysqli_fetch_array($result)) {
@@ -64,7 +58,6 @@ if(!$con) {
                                     $kills = $row['Kills'];
                                     $deaths = $row['Deaths'];
                                     $coins = $row['Coins'];
-
                                     $num++;?>
                                     <tr>
                                         <td><?php echo $num;?>.</td>
@@ -88,11 +81,9 @@ if(!$con) {
                             <?php
                             }
                         }
-
                         else if($sortby == "deaths") {
                             $query = "SELECT * FROM ".$table." ORDER BY Deaths DESC LIMIT ".$topplayers;
                             $result = mysqli_query($con, $query);
-
                             if(mysqli_num_rows($result) > 0) {
                                 $num = 0;
                                 while($row = mysqli_fetch_array($result)) {
@@ -100,7 +91,6 @@ if(!$con) {
                                     $kills = $row['Kills'];
                                     $deaths = $row['Deaths'];
                                     $coins = $row['Coins'];
-
                                     $num++;?>
                                     <tr>
                                         <td><?php echo $num;?>.</td>
@@ -124,11 +114,9 @@ if(!$con) {
                             <?php
                             }
                         }
-
                         else if($sortby == "coins") {
                             $query = "SELECT * FROM ".$table." ORDER BY Coins DESC LIMIT ".$topplayers;
                             $result = mysqli_query($con, $query);
-
                             if(mysqli_num_rows($result) > 0) {
                                 $num = 0;
                                 while($row = mysqli_fetch_array($result)) {
@@ -136,7 +124,6 @@ if(!$con) {
                                     $kills = $row['Kills'];
                                     $deaths = $row['Deaths'];
                                     $coins = $row['Coins'];
-
                                     $num++;?>
                                 <tr>
                                     <td><?php echo $num;?>.</td>
@@ -163,7 +150,6 @@ if(!$con) {
                     } else {
                         $query = "SELECT * FROM ".$table." ORDER BY Kills DESC LIMIT ".$topplayers;
                             $result = mysqli_query($con, $query);
-
                             if(mysqli_num_rows($result) > 0) {
                                 $num = 0;
                                 while($row = mysqli_fetch_array($result)) {
@@ -171,8 +157,8 @@ if(!$con) {
                                     $kills = $row['Kills'];
                                     $deaths = $row['Deaths'];
                                     $coins = $row['Coins'];
-
-                                    $num++;?>
+                                    $num++;
+                                    ?>
                                     <tr>
                                         <td><?php echo $num;?>.</td>
                                         <td><?php echo $name;?></td>
@@ -195,7 +181,6 @@ if(!$con) {
                             <?php
                             }
                     }
-
                     ?>
                 </tbody>
             </table>
