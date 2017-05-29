@@ -1,8 +1,8 @@
 <?php
 
-/* 	
+/*
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**-*-*-**-*-*-*
-	NAVBAR LINKS CAN BE EDITED ON navbar.php 
+	NAVBAR LINKS CAN BE EDITED ON navbar.php
 
 	1 = YES
 	0 = NO
@@ -18,6 +18,12 @@ $serverip = "mc.planetbn.com:25565";
 $topplayers = 12;
 $playerheadsize = 25;
 $showuuid = 1;
+
+/*
+default = BootStrap Themed
+blue = Blue Themed
+*/
+$style = "blue";
 
 /* THIS IS FOR DEBUGGING MODE, IF THERE IS SOMETHING WRONG WITH THE TABLE, MAKE SURE TO ENABLE THIS */
 $debugmode = 0;
