@@ -15,17 +15,6 @@
 				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> STORE</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<div class="search-nav">
-					<form class="form-inline text-center" action="search.php" method="get">
-		        <div class="input-group">
-			        <input type="text" name="keywords" autocomplete="off" class="form-control" placeholder="Search Items">
-				        <span class="input-group-btn">
-				        <button class="btn btn-default" type="submit">Search</button>
-			        </span>
-			        </input>
-		        </div>
-	        </form>
-				</div>
 				<!--SOON<a href="#" class="btn btn-danger btn-lg">Admin</a>-->
 			</ul>
 		</div>
