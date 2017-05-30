@@ -17,7 +17,7 @@ $servername = "planetbn";
 $serverip = "mc.planetbn.com:25565";
 $topplayers = 12;
 $playerheadsize = 25;
-$showuuid = 1;
+$showuuid = 0;
 
 /*
 default = BootStrap Themed

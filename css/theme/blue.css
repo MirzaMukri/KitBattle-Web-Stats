@@ -36,7 +36,7 @@ a.list-group-item:hover {
     border-color: #123652 !important;
 }
 .well .well-inside {
-    background-color: #3C3C3C !important;
+    background-color: #123652 !important;
 }
 h4 {
     color: white;
@@ -66,18 +66,19 @@ h4 {
     color: white;
 }
 .panel-body, .panel-heading, .panel-footer {
-    background-color: #575757 !important;
+    background-color: #527590 !important;
     color: white;
 }
 .well {
     border: 0px;
-    background-color: #527590;
+    background-color: #123652;
     border-bottom: 5px solid #042037;
     border-radius: 0 !important;
+    border-bottom: 5px solid #042037;
 }
 
 /* Navbar */
-.search-nav {
+.search-bar {
   padding-top: 10px;
 }
 .nav {
@@ -124,4 +125,14 @@ h4 {
 /* Players Stats */
 .players {
   margin-top: 50px;
+}
+.players img {
+  display: block;
+  margin: 0 auto;
+}
+.players p {
+  font-size: 15px;
+}
+.info {
+  padding-right: 10px;
 }

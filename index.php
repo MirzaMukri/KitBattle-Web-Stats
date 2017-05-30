@@ -181,6 +181,8 @@ if(!$con) {
                             <?php
                             }
                     }
+
+                    mysqli_close($con);
                     ?>
                 </tbody>
             </table>
@@ -191,8 +193,8 @@ if(!$con) {
             </div>
             <div class="list-group">
                 <li class="list-group-item text-center"><h3>Sort By:</h3></li>
-                <a href="?sort=deaths" class="list-group-item"><i class="fa fa-arrow-right" aria-hidden="true"></i> Deaths</a>
                 <a href="?sort=kills" class="list-group-item"><i class="fa fa-arrow-right" aria-hidden="true"></i> Kills</a>
+                <a href="?sort=deaths" class="list-group-item"><i class="fa fa-arrow-right" aria-hidden="true"></i> Deaths</a>
                 <a href="?sort=coins" class="list-group-item"><i class="fa fa-arrow-right" aria-hidden="true"></i> Coins</a>
             </div>
         </div>
